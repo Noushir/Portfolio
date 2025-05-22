@@ -1,0 +1,129 @@
+.launcher {
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2.5rem;
+  z-index: 1000;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 4px 24px 0 rgba(106, 130, 251, 0.18);
+  border-radius: 50%;
+  padding: 0;
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chatOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(10, 10, 20, 0.45);
+  z-index: 1100;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.chatWindow {
+  width: 350px;
+  max-width: 98vw;
+  background: #181824;
+  border-radius: 1.2rem 1.2rem 0 0;
+  box-shadow: 0 8px 48px 0 rgba(106, 130, 251, 0.18);
+  margin: 0 2.5rem 2.5rem 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.chatHeader {
+  background: #6a82fb;
+  color: #fff;
+  font-weight: 600;
+  padding: 1rem 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.closeBtn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+.chatBody {
+  flex: 1;
+  padding: 1.2rem;
+  background: #181824;
+  overflow-y: auto;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.assistantMsg {
+  align-self: flex-start;
+  background: #23234a;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 1.2rem 1.2rem 1.2rem 0.3rem;
+  max-width: 80%;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px 0 rgba(106, 130, 251, 0.08);
+}
+.userMsg {
+  align-self: flex-end;
+  background: #6a82fb;
+  color: #fff;
+  padding: 0.7rem 1rem;
+  border-radius: 1.2rem 1.2rem 0.3rem 1.2rem;
+  max-width: 80%;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px 0 rgba(106, 130, 251, 0.08);
+}
+.chatInputBar {
+  display: flex;
+  border-top: 1px solid #23234a;
+  background: #181824;
+  padding: 0.7rem 1rem;
+}
+.chatInput {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: #23234a;
+  color: #fff;
+  border-radius: 0.7rem;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  margin-right: 0.7rem;
+}
+.sendBtn {
+  background: #6a82fb;
+  color: #fff;
+  border: none;
+  border-radius: 0.7rem;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.sendBtn:hover {
+  background: #fc5c7d;
+}
+@media (max-width: 600px) {
+  .launcher {
+    bottom: 1.2rem;
+    right: 1.2rem;
+    width: 44px;
+    height: 44px;
+  }
+  .chatWindow {
+    margin: 0 0.5rem 0.5rem 0;
+    width: 98vw;
+    border-radius: 1.2rem 1.2rem 0 0;
+  }
+} 

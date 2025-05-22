@@ -1,0 +1,28 @@
+/* CSS Reset and base styles */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: #0a0a0f;
+  color: #f5f6fa;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background: #181824;
+}
+::-webkit-scrollbar-thumb {
+  background: #28293e;
+  border-radius: 4px;
+}

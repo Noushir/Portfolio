@@ -1,0 +1,71 @@
+.researchSection {
+  width: 100%;
+  padding: 4vh 0 8vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #6a82fb;
+}
+.researchGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  width: 90vw;
+  max-width: 900px;
+}
+.researchCard {
+  background: rgba(40, 40, 70, 0.85);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 2px 16px 0 rgba(106, 130, 251, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.researchCard:hover {
+  box-shadow: 0 8px 32px 0 rgba(106, 130, 251, 0.18);
+  transform: translateY(-6px) scale(1.03);
+}
+.researchHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: 0.7rem;
+}
+.researchTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #f5f6fa;
+}
+.researchDate {
+  font-size: 1rem;
+  color: #a0a0c0;
+  font-style: italic;
+}
+.researchDetails {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #e0e0f0;
+  font-size: 1rem;
+}
+.doiLink {
+  margin-top: 0.7rem;
+  color: #fc5c7d;
+  font-size: 0.98rem;
+  text-decoration: underline;
+  word-break: break-all;
+  align-self: flex-start;
+}
+@media (max-width: 600px) {
+  .researchGrid {
+    gap: 1rem;
+  }
+  .researchCard {
+    padding: 1.2rem 0.7rem;
+  }
+} 

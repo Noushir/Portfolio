@@ -1,0 +1,45 @@
+.achievementsSection {
+  width: 100%;
+  padding: 4vh 0 8vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #6a82fb;
+}
+.achievementsList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 90vw;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.achievement {
+  background: rgba(30, 30, 60, 0.85);
+  border-radius: 1rem;
+  padding: 1.2rem 1.5rem;
+  color: #f5f6fa;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0 2px 16px 0 rgba(106, 130, 251, 0.08);
+  transition: box-shadow 0.2s;
+}
+.achievement:hover {
+  box-shadow: 0 8px 32px 0 rgba(106, 130, 251, 0.18);
+}
+@media (max-width: 600px) {
+  .achievementsList {
+    gap: 0.7rem;
+  }
+  .achievement {
+    padding: 0.8rem 0.7rem;
+    font-size: 1rem;
+  }
+} 

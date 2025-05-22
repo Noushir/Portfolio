@@ -1,0 +1,175 @@
+{
+  "name": "Mohammed Noushir",
+  "greetings": ["Hi!", "Hello!", "Hola!"],
+  "sideComment": "I know, it's a mouthful",
+  "bio": "AI/ML researcher, innovator, and builder with a passion for agentic AI, multimodal systems, and real-world impact. Experienced in leading research, building startups, and mentoring in academic and industry settings.",
+  "roles": [
+    "AI/ML Researcher",
+    "Co-Founder & AI Research Lead",
+    "AI Business Fellow",
+    "Graduate Automation Developer",
+    "AI & ML Demonstrator",
+    "R&D and NLP Engineering Intern"
+  ],
+  "contact": {
+    "email": "mhmdnoushir.k@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/mohammednoushir/",
+    "github": "https://www.github.com/Noushir/",
+    "phone": "+447553650476"
+  },
+  "skills": [
+    { "name": "Python", "level": "Expert" },
+    { "name": "C", "level": "Intermediate" },
+    { "name": "PyTorch", "level": "Advanced" },
+    { "name": "TensorFlow", "level": "Advanced" },
+    { "name": "LangChain", "level": "Advanced" },
+    { "name": "LoRA", "level": "Advanced" },
+    { "name": "RLHF", "level": "Advanced" },
+    { "name": "Retrieval-Augmented Generation (RAG)", "level": "Advanced" },
+    { "name": "Agentic AI", "level": "Advanced" },
+    { "name": "Knowledge Graphs", "level": "Advanced" },
+    { "name": "Information Retrieval", "level": "Advanced" },
+    { "name": "AWS (S3, EC2, SageMaker)", "level": "Advanced" },
+    { "name": "Kubernetes", "level": "Intermediate" },
+    { "name": "Docker", "level": "Intermediate" },
+    { "name": "Ownership", "level": "Soft Skill" },
+    { "name": "Leadership", "level": "Soft Skill" },
+    { "name": "Results-Driven", "level": "Soft Skill" },
+    { "name": "Mentoring", "level": "Soft Skill" },
+    { "name": "Creative Problem-Solving", "level": "Soft Skill" },
+    { "name": "Critical Thinking", "level": "Soft Skill" },
+    { "name": "Adaptability", "level": "Soft Skill" },
+    { "name": "Effective Communication", "level": "Soft Skill" },
+    { "name": "Emotional Intelligence", "level": "Soft Skill" }
+  ],
+  "education": [
+    {
+      "title": "Master of Science - Artificial Intelligence and Machine Learning in Science",
+      "institution": "Queen Mary University of London",
+      "location": "London, United Kingdom",
+      "year": "Sep 2024 - Sep 2025",
+      "details": "Postgraduate study focused on advanced AI/ML techniques and their application in scientific domains."
+    },
+    {
+      "title": "Bachelor of Engineering - Artificial Intelligence and Machine Learning (Grade 2:1)",
+      "institution": "Acharya Institute of Technology",
+      "location": "Bengaluru, Karnataka, India",
+      "year": "Aug 2020 - May 2024",
+      "details": "Undergraduate degree with a focus on AI/ML, graduated with honors."
+    }
+  ],
+  "experience": [
+    {
+      "company": "Scintilink",
+      "location": "London, United Kingdom",
+      "role": "Co-Founder & AI Research Lead",
+      "period": "Dec 2024 – Present",
+      "highlights": [
+        "Leading AI research and development on a platform for interdisciplinary knowledge discovery.",
+        "Developing modular agentic AI frameworks for research workflows.",
+        "Architecting scalable multimodal AI pipelines for academic insights.",
+        "Implementing explainable AI (XAI) and Agentic RAG techniques for LLM transparency and safety."
+      ]
+    },
+    {
+      "company": "Perplexity",
+      "location": "London, United Kingdom",
+      "role": "AI Business Fellow",
+      "period": "Feb 2025 – Present",
+      "highlights": [
+        "Selected (Top 5%) for inaugural AI business program.",
+        "Workshops with leaders from NVIDIA, Databricks, Box, etc.",
+        "Hands-on AI business innovation with $40K+ in enterprise tools."
+      ]
+    },
+    {
+      "company": "XQTechnical",
+      "location": "London, United Kingdom",
+      "role": "Graduate Automation Developer",
+      "period": "Feb 2025 – Present",
+      "highlights": [
+        "Researched LLM tools for candidate-job matching in F1 industry.",
+        "Built and deployed custom GPT models for workflow automation.",
+        "Developed POCs for workflow streamlining across business functions.",
+        "Presented AI findings to non-technical stakeholders."
+      ]
+    },
+    {
+      "company": "Queen Mary University of London",
+      "location": "London, United Kingdom",
+      "role": "AI & ML Demonstrator",
+      "period": "Sep 2024 – Present",
+      "highlights": [
+        "Delivered lab sessions for AI/ML courses to 60+ apprentices.",
+        "Mentored apprentices in debugging and ML project optimization.",
+        "Collaborated with faculty to align labs with industry trends.",
+        "Analyzed engagement data to improve course materials."
+      ]
+    },
+    {
+      "company": "Infogen Labs Inc.",
+      "location": "United States (Remote/COE)",
+      "role": "R&D and NLP Engineering Intern",
+      "period": "Sept 2023 – Jan 2024",
+      "highlights": [
+        "Led a team of 3 interns on advanced AI prototypes.",
+        "Fine-tuned Mistral 7B for prompt-to-code web generation.",
+        "Designed multi-agent Autogen system for travel planning.",
+        "Built a JSON Query Generator using Falcon7B, reducing manual data transformation by >50%."
+      ]
+    }
+  ],
+  "achievements": [
+    "Judge/Panelist for targetjobs' National Graduate Recruitment Awards 2025.",
+    "Best Startup Idea Award at QHack for AI innovation.",
+    "Selected for Self-Made Programme by TargetJobs.",
+    "Represented QMUL at Top London University Startup Mixer (LSE).",
+    "2× Hackathon Runner-Up; KAVACH 2023 national cybersecurity hackathon nominee."
+  ],
+  "projects": [
+    {
+      "title": "Computer Auditory Imagination",
+      "period": "Nov 2023 – May 2024",
+      "details": [
+        "Gen-AI based Video Synthesis Model from non-linguistic auditory inputs.",
+        "Architecture: audio encoders, LLMs, video synthesizers for human-like auditory imagination."
+      ]
+    },
+    {
+      "title": "AI-Based Literary Style Transfer",
+      "period": "Sep 2023 – Jan 2024",
+      "details": [
+        "Fine-tuned T5-based LLM for dynamic literary style transfer.",
+        "Built adaptive pipeline for style replication with semantic preservation."
+      ]
+    },
+    {
+      "title": "Low-Light Sign Language Detection",
+      "period": "Mar 2023 – Jun 2023",
+      "details": [
+        "Real-time sign language detection in low-light using transfer learning and SSD MobileNet V2.",
+        "Used TensorFlow, Mediapipe, OpenCV, Keras, CNN, and custom datasets."
+      ]
+    }
+  ],
+  "research": [
+    {
+      "title": "Computer Auditory Imagination: A Multi-Model Approach for Audio to Video Synthesis",
+      "date": "Mar 2025",
+      "details": [
+        "Presented at ICGCPA-2024; published in Springer's 'Studies in Smart Technologies' (2025).",
+        "Proposed a novel Gen-AI architecture for audio-to-video synthesis."
+      ],
+      "doi": "https://doi.org/10.1007/978-981-97-9132-3_3"
+    },
+    {
+      "title": "Region-Specific Adaptive Weighted Multiscale Retinex (RS-AWMSR): A Real-Time Approach to Low-Light Image Enhancement for Sign Language Recognition",
+      "date": "Dec 2024",
+      "details": [
+        "Invented a real-time low-light enhancement method for sign language recognition.",
+        "Presented at IEEE CVMI 2024; published in IEEE Xplore."
+      ],
+      "doi": "10.1109/CVMI61877.2024.10782578"
+    }
+  ]
+} 

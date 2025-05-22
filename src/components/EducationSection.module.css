@@ -1,0 +1,68 @@
+.educationSection {
+  width: 100%;
+  padding: 4vh 0 8vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #fc5c7d;
+}
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 90vw;
+  max-width: 700px;
+}
+.eduCard {
+  background: rgba(40, 40, 70, 0.85);
+  border-radius: 1rem;
+  padding: 1.5rem 1.5rem 1rem 1.5rem;
+  box-shadow: 0 2px 16px 0 rgba(252, 92, 125, 0.08);
+  cursor: pointer;
+  transition: box-shadow 0.2s, background 0.2s;
+  position: relative;
+}
+.eduCard:hover {
+  box-shadow: 0 8px 32px 0 rgba(252, 92, 125, 0.18);
+  background: rgba(40, 40, 90, 0.95);
+}
+.eduHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.eduTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f5f6fa;
+}
+.eduInstitution {
+  font-size: 1rem;
+  color: #a0a0c0;
+}
+.eduYear {
+  font-size: 0.95rem;
+  color: #6a82fb;
+  font-style: italic;
+}
+.eduDetails {
+  margin-top: 1rem;
+  color: #e0e0f0;
+  font-size: 1rem;
+  border-top: 1px solid #28293e;
+  padding-top: 0.7rem;
+  overflow: hidden;
+}
+@media (max-width: 600px) {
+  .timeline {
+    gap: 1rem;
+  }
+  .eduCard {
+    padding: 1rem 0.7rem 0.7rem 0.7rem;
+  }
+} 

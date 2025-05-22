@@ -1,0 +1,63 @@
+.projectsSection {
+  width: 100%;
+  padding: 4vh 0 8vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #fc5c7d;
+}
+.projectsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  width: 90vw;
+  max-width: 900px;
+}
+.projectCard {
+  background: rgba(30, 30, 60, 0.85);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  box-shadow: 0 2px 16px 0 rgba(252, 92, 125, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+.projectCard:hover {
+  box-shadow: 0 8px 32px 0 rgba(252, 92, 125, 0.18);
+  transform: translateY(-6px) scale(1.03);
+}
+.projectHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin-bottom: 0.7rem;
+}
+.projectTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f5f6fa;
+}
+.projectPeriod {
+  font-size: 1rem;
+  color: #a0a0c0;
+  font-style: italic;
+}
+.projectDetails {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #e0e0f0;
+  font-size: 1rem;
+}
+@media (max-width: 600px) {
+  .projectsGrid {
+    gap: 1rem;
+  }
+  .projectCard {
+    padding: 1.2rem 0.7rem;
+  }
+} 
