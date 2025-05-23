@@ -1,0 +1,16 @@
+substitutions:
+  _REGION: europe-west2
+  _REPO: porfolio-repo
+steps:
+# Build the container image
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', '${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPO}/backend-api:latest', '.']
+# Push the container image to Artifact Registry
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['push', '${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPO}/backend-api:latest']
+# Deploy container image to Cloud Run
+- name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+  entrypoint: gcloud
+  args: ['run', 'deploy', 'backend-api', '--image', '${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPO}/backend-api:latest', '--platform', 'managed', '--region', '${_REGION}', '--allow-unauthenticated', '--update-secrets=GROQ_API_KEY=projects/${PROJECT_ID}/secrets/GROQ_API_KEY:latest']
+images:
+- '${_REGION}-docker.pkg.dev/${PROJECT_ID}/${_REPO}/backend-api:latest' 

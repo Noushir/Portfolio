@@ -1,28 +1,36 @@
 /* CSS Reset and base styles */
+html {
+  scroll-behavior: smooth;
+}
+
 html, body, #root {
-  height: 100%;
   margin: 0;
   padding: 0;
+  height: 100%;
+  width: 100%;
+  overscroll-behavior: none;
   font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
   background: #0a0a0f;
   color: #f5f6fa;
-  box-sizing: border-box;
 }
 
 * {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
   min-height: 100vh;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::-webkit-scrollbar {
   width: 8px;
-  background: #181824;
+  background: #0a0a0f;
 }
+
 ::-webkit-scrollbar-thumb {
-  background: #28293e;
+  background: linear-gradient(to bottom, #6a82fb, #fc5c7d);
   border-radius: 4px;
 }

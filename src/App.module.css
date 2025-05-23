@@ -6,4 +6,201 @@
   align-items: stretch;
   background: linear-gradient(135deg, #0a0a0f 60%, #1a1a2e 100%);
   overflow-x: hidden;
+}
+
+/* Narrative question styles */
+.narrativeQuestion {
+  width: 100%;
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4vh 1rem;
+  background: rgba(20, 20, 40, 0.5);
+  border-top: 1px solid rgba(106, 130, 251, 0.1);
+  border-bottom: 1px solid rgba(252, 92, 125, 0.1);
+  margin: 2vh 0;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.narrativeQuestion:hover {
+  background: rgba(25, 25, 50, 0.7);
+}
+
+.narrativeQuestion::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(106, 130, 251, 0.08) 0%, transparent 70%);
+  z-index: 0;
+}
+
+.narrativeQuestion h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #fff;
+  max-width: 900px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #6a82fb 0%, #fc5c7d 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1;
+  letter-spacing: -0.5px;
+  transition: all 0.3s ease;
+}
+
+.narrativeQuestion:hover h2 {
+  transform: scale(1.02);
+  letter-spacing: 0px;
+}
+
+/* Scroll down arrow */
+.scrollDown {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 50px;
+  z-index: 2;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+.narrativeQuestion:hover .scrollDown {
+  opacity: 1;
+}
+
+.arrow {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-right: 3px solid;
+  border-bottom: 3px solid;
+  border-image: linear-gradient(135deg, #6a82fb, #fc5c7d) 1;
+  transform: rotate(45deg);
+  margin: 0 auto;
+  animation: arrowBounce 2s infinite;
+}
+
+@keyframes arrowBounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0) rotate(45deg);
+  }
+  40% {
+    transform: translateY(-10px) rotate(45deg);
+  }
+  60% {
+    transform: translateY(-5px) rotate(45deg);
+  }
+}
+
+/* Calendar section styles */
+.calendarSection {
+  width: 100%;
+  padding: 6vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgba(30, 30, 50, 0.3);
+}
+
+.calendarHeading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #6a82fb;
+  max-width: 800px;
+}
+
+.calendarText {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #e0e0f0;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Feedback section styles */
+.feedbackSection {
+  width: 100%;
+  padding: 6vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feedbackHeading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #fc5c7d;
+  max-width: 800px;
+}
+
+.feedbackText {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #e0e0f0;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 768px) {
+  .narrativeQuestion {
+    min-height: 20vh;
+    padding: 3vh 1rem;
+  }
+  
+  .narrativeQuestion h2 {
+    font-size: 2.2rem;
+  }
+  
+  .scrollDown {
+    bottom: 10px;
+  }
+  
+  .arrow {
+    width: 15px;
+    height: 15px;
+    border-width: 2px;
+  }
+}
+
+@media (max-width: 600px) {
+  .narrativeQuestion {
+    min-height: 15vh;
+    padding: 2vh 1rem;
+  }
+  
+  .narrativeQuestion h2 {
+    font-size: 1.8rem;
+  }
+  
+  .calendarHeading,
+  .feedbackHeading {
+    font-size: 1.8rem;
+    padding: 0 1rem;
+  }
+  
+  .calendarText,
+  .feedbackText {
+    font-size: 1.1rem;
+    padding: 0 1.5rem;
+  }
 } 

@@ -1,0 +1,50 @@
+# Version control
+.git
+.gitignore
+.github
+
+# Environment variables
+.env
+.env.*
+!.env.template
+
+# Python bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+.pytest_cache/
+
+# Development artifacts
+*.log
+*.pot
+*.pyc
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.pytest_cache/
+test_data/
+
+# Editor and IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Documentation
+docs/
+README.md
+cloud-run-setup.md
+
+# Build files
+dist/
+build/
+*.egg-info/ 

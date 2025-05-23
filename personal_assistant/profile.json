@@ -17,13 +17,6 @@
     "github": "https://www.github.com/Noushir/",
     "phone": "+447553650476"
   },
-  "socialProfiles": [
-    { "name": "LinkedIn", "url": "https://www.linkedin.com/in/mohammednoushir/", "icon": "linkedin" },
-    { "name": "GitHub", "url": "https://github.com/Noushir", "icon": "github" },
-    { "name": "Twitter", "url": "https://twitter.com/NoushirK", "icon": "twitter" },
-    { "name": "Medium", "url": "https://medium.com/@mhmdnoushir.k", "icon": "medium" },
-    { "name": "Email", "url": "mailto:mhmdnoushir.k@gmail.com", "icon": "email" }
-  ],
   "skills": [
     { "name": "Python", "level": "Expert" },
     { "name": "C", "level": "Intermediate" },
